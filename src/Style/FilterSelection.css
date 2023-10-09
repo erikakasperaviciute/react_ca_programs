@@ -1,0 +1,12 @@
+.filter-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+select {
+    border: none;
+    border-radius: 25px;
+    padding: 13px 20px 11px;
+    background-color: #f2f2f2;
+}

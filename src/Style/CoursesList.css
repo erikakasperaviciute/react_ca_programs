@@ -1,0 +1,25 @@
+.all-courses-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+@media (max-width: 950px) {
+    .all-courses-container {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .all-courses-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+    .all-courses-container {
+        grid-template-columns: 1fr;
+    }
+}

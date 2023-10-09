@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+img {
+    width: 97px;
+    height: 97px;
+}
+
+body {
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 600px;
+    gap: 30px;
+}
+
+h1,
+h2 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+h1 {
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 24px;
+    line-height: 1.17;
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+
+p,
+a,
+label,
+select,
+legend,
+button,
+li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+select {
+    text-transform: uppercase;
+
+}
+
+label,
+select,
+legend {
+    font-size: 14px;
+}
+
+legend,
+label:nth-child(-n+1) {
+    font-weight: bolder;
+}
+
+.courses-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+}
+
+@media (max-width: 650px) {
+    .courses-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    h1 {
+        font-size: 58px;
+    }
+}

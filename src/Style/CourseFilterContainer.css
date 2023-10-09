@@ -1,0 +1,45 @@
+.course-filter-container {
+    width: 100%;
+}
+
+form {
+    position: sticky;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-color: white;
+    padding: 45px 40px 40px 40px;
+
+}
+
+.clear-btn {
+    background: transparent;
+    border: 1px solid #1200ff;
+    border-radius: 25px;
+    padding: 13px 30px 11px;
+    text-transform: uppercase;
+    color: #1200ff;
+    font-weight: 700;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.clear-btn:focus {
+    box-shadow: 0 0 8px 0 #1200ff;
+    color: black;
+    border-color: black;
+}
+
+@media (max-width: 650px) {
+    .form {
+        position: static;
+    }
+}
+
+@media (max-width: 350px) {
+
+    form {
+        padding: 45px 20px 40px 20px;
+    }
+}

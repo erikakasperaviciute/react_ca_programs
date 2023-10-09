@@ -1,0 +1,57 @@
+.btn-to-test {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    background-image: url(../Images/programs-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: 80% 70%;
+    background-size: 40%;
+    padding: 25px 40px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.btn-to-test span.pink {
+    color: #ff00e9;
+}
+
+@media (max-width: 950px) {
+    .btn-to-test {
+        background-size: 70%;
+
+    }
+}
+
+@media (max-width: 805px) {
+    .btn-to-test {
+        background-position: bottom;
+        padding: 15px 25px 175px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .btn-to-test {
+        background-size: 98%;
+        display: grid;
+        grid-template-columns: 1fr 30px;
+        font-size: 22px;
+        column-gap: 15px;
+
+    }
+}
+
+@media (max-width: 550px) {
+
+    .btn-to-test {
+        background-size: 110%;
+
+    }
+
+    .btn-to-test span {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
