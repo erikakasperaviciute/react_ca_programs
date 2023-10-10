@@ -1,10 +1,10 @@
 import CourseFilterContainer from "./CourseFilterContainer";
 import CoursesList from "./CoursesList";
-function CoursesWrapper() {
+function CoursesWrapper(props) {
   return (
     <div className="courses-wrapper">
-      <CourseFilterContainer />
-      <CoursesList />
+      <CourseFilterContainer filterData={props.filterData} />
+      <CoursesList coursesArr={props.coursesList} />
     </div>
   );
 }

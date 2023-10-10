@@ -9,8 +9,8 @@ function FilterCheckBox(props) {
   return (
     <div className="filter-selection">
       <legend>{legend}</legend>
-      {options.map((option) => (
-        <div>
+      {options.map((option, index) => (
+        <div key={index}>
           <input type="checkbox" id={option.id} name={option.name} />
           <label htmlFor={option.id}>{option.label}</label>
         </div>

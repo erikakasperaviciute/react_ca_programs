@@ -16,8 +16,10 @@ function CourseItem(props) {
 
   const featuresList =
     features &&
-    features.map((feature) => (
-      <li className={feature.className}>{feature.text} </li>
+    features.map((feature, index) => (
+      <li key={index} className={feature.className}>
+        {feature.text}{" "}
+      </li>
     ));
 
   const uztFundingElement = uztFunding && <span>{uztFunding}</span>;

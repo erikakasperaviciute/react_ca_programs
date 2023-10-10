@@ -10,8 +10,8 @@ function FilterOptions(props) {
     <div className="filter-selection">
       <label htmlFor={id}>{label}</label>
       <select name={name} id={id}>
-        {options.map((option) => (
-          <option key={option.value} value={option.value}>
+        {options.map((option, index) => (
+          <option key={index} value={option.value}>
             {option.label}
           </option>
         ))}

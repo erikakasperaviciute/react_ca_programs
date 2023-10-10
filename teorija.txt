@@ -1,0 +1,1 @@
+Jei leidžiame ciklą, turi būti nurodytas key. Key turi būti unikalus. Jei dirbtume su tikrais duomenimis, tai jie turėtų nurodytą id, bet galim naudoti indeksą vietoj key reikšmės.
